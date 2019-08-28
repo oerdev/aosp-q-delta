@@ -1,0 +1,2 @@
+./hardware/interfaces/update-makefiles.sh
+update-vndk-list.sh
