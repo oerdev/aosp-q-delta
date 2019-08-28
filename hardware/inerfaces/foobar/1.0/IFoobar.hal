@@ -1,0 +1,5 @@
+package android.hardware.foobar@1.0;
+
+interface IFoobar {
+    getVersion() generates (uint32_t ver);
+};

@@ -1,0 +1,14 @@
+cc_binary {
+    name: "foobarcl",
+    defaults: ["hidl_defaults"],
+    proprietary: true,
+    srcs: ["foobarcl.cpp"],
+ 
+    shared_libs: [
+        "android.hardware.foobar@1.0",
+        "libhidlbase",
+        "libhidltransport",
+        "liblog",
+        "libutils",
+    ],
+}

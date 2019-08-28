@@ -1,0 +1,20 @@
+generic_x86_64:/system # find -iname *foobar*
+./lib64/android.hardware.foobar@1.0-vts.profiler.so
+./lib64/android.hardware.foobar@1.0-adapter-helper.so
+./lib64/vndk-Q/android.hardware.foobar@1.0.so
+./lib64/android.hardware.foobar@1.0-vts.driver.so
+./lib64/android.hardware.foobar@1.0.so
+./framework/android.hardware.foobar-V1.0-java.jar
+./lib/android.hardware.foobar@1.0-vts.profiler.so
+./lib/android.hardware.foobar@1.0-adapter-helper.so
+./lib/vndk-Q/android.hardware.foobar@1.0.so
+./lib/android.hardware.foobar@1.0-vts.driver.so
+./lib/android.hardware.foobar@1.0.so
+generic_x86_64:/system # cd ../vendor/                                   
+generic_x86_64:/vendor # find -iname *foobar*                            
+./bin/hw/android.hardware.foobar@1.0-service
+./bin/foobarcl
+./etc/init/android.hardware.foobar@1.0-service.rc
+./lib64/android.hardware.foobar@1.0-adapter-helper.so
+./lib/android.hardware.foobar@1.0-adapter-helper.so
+

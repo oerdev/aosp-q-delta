@@ -1,0 +1,21 @@
+component_class: HAL_HIDL
+component_name: "IFoobar"
+
+component_type_version_major: 1
+component_type_version_minor: 0
+package: "android.hardware.foobar"
+
+import: "android.hidl.base@1.0::types"
+
+interface: {
+    api: {
+        name: "getVersion"
+        is_inherited: false
+        return_type_hidl: {
+            name: "ver"
+            type: TYPE_SCALAR
+            scalar_type: "uint32_t"
+        }
+    }
+
+}

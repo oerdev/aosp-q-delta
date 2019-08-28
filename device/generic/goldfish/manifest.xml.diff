@@ -1,0 +1,20 @@
+diff --git a/manifest.xml b/manifest.xml
+index 26d4b3d..132c516 100644
+--- a/manifest.xml
++++ b/manifest.xml
+@@ -191,6 +191,15 @@
+             <instance>default</instance>
+         </interface>
+     </hal>
++    <hal format="hidl">
++        <name>android.hardware.foobar</name>
++	<transport>hwbinder</transport>
++        <version>1.0</version>
++        <interface>
++            <name>IFoobar</name>
++            <instance>default</instance>
++        </interface>
++    </hal>
+     <hal format="hidl">
+         <name>android.hardware.health</name>
+         <transport>hwbinder</transport>

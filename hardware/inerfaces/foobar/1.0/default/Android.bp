@@ -1,0 +1,27 @@
+// FIXME: your file license if you have one
+
+cc_binary {
+    //   cc_library_shared.
+    // - delete HIDL_FETCH_I* functions.
+    // - call configureRpcThreadpool and registerAsService on the instance.
+    name: "android.hardware.foobar@1.0-service",
+    relative_install_path: "hw",
+    proprietary: true,
+    srcs: [
+        "Foobar.cpp",
+        "service.cpp",
+    ],
+    cflags: [
+        "-Wall",
+        "-Werror",
+    ],
+    shared_libs: [
+        "libbase",
+        "libhidlbase",
+        "libhidltransport",
+        "liblog",
+        "libutils",
+        "android.hardware.foobar@1.0",
+    ],
+    init_rc: ["android.hardware.foobar@1.0-service.rc"],
+}

@@ -1,0 +1,15 @@
+diff --git a/qemu_base.mk b/qemu_base.mk
+index 117a653..97a085d 100644
+--- a/qemu_base.mk
++++ b/qemu_base.mk
+@@ -81,7 +81,9 @@ PRODUCT_PACKAGES += \
+     sh \
+     toolbox \
+     toybox \
+-    vold
++    vold \
++    foobar \
++    foobarcl
+ 
+ # SELinux packages are added as dependencies of the selinux_policy
+ # phony package.

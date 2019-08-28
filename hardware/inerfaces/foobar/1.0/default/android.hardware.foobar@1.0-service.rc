@@ -1,0 +1,4 @@
+service foobar_halservice /vendor/bin/hw/android.hardware.foobar@1.0-service
+    class hal
+    user root
+    group root
