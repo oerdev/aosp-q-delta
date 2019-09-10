@@ -6,6 +6,8 @@ hidl-gen -L c++-impl -r android.hardware:vendor/oerdev/foo/hardware/interfaces a
 
 hidl-gen -L androidbp-impl -r android.hardware:vendor/oerdev/foo/hardware/interfaces android.hardware.foobar@1.0 -o vendor/oerdev/foo/hardware/interfaces/foobar/1.0/default/ 
 
+hidl-gen -L hash -r oerdev.hardware:vendor/oerdev/foo/hardware/interfaces/ oerdev.hardware.foobar@1.0 >> vendor/oerdev/f
+oo/hardware/interfaces/current.txt
 
 ### Soong build command (w.r.t mm)
 
