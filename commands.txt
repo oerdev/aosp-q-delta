@@ -1,2 +1,18 @@
+### hal-gen boiler plate commands
+
+hidl-gen -L androidbp -r android.hardware:vendor/oerdev/foo/hardware/interfaces android.hardware.foobar@1.0    
+
+hidl-gen -L c++-impl -r android.hardware:vendor/oerdev/foo/hardware/interfaces android.hardware.foobar@1.0 -o vendor/oerdev/foo/hardware/interfaces/foobar/1.0/default/    
+
+hidl-gen -L androidbp-impl -r android.hardware:vendor/oerdev/foo/hardware/interfaces android.hardware.foobar@1.0 -o vendor/oerdev/foo/hardware/interfaces/foobar/1.0/default/ 
+
+
+### Soong build command (w.r.t mm)
+
+out/soong/.bootstrap/bin/soong_build -t -l out/.module_paths/Android.bp.list -b out/soong -n out -d out/soong/build.ninja.d -globFile out/soong/.bootstrap/build-globs.ninja -o out/soong/build.ninja Android.bp
+
+
+## Update APIs
+
 ./hardware/interfaces/update-makefiles.sh
 update-vndk-list.sh
